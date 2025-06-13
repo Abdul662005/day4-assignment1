@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS practice</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+            background-color: #f0f0f0; 
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .level-indicator-container {
+            width: 150px; 
+            height: 200px;
+            background-color: #ffaa00; 
+            border-radius: 100px 100px 10px 10px; 
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .level-box {
+            width: 100%; 
+            padding: 15px 0;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 5px;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+            align-items: center;
+            height: 50%;
+        }
+
+        .level-box:last-child {
+            margin-bottom: 0;
+        }
+
+        .level-box.red {
+            background-color: #ff0000;
+            border: 1px solid #cc0000;
+            height: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .level-box.yellow {
+            background-color: #ffff00; 
+            color: #333; 
+            border: 1px solid #cccc00;
+            height: 10px;
+        }
+
+        .level-box.green {
+            background-color: #008000; 
+            border: 1px solid #006600;
+            height: 10px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="level-indicator-container">
+        <div class="level-box red">MCA</div>
+        <div class="level-box yellow">BCA</div>
+        <div class="level-box green">BBA</div>
+    </div>
+
+</body>
+</html>
